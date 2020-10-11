@@ -13,9 +13,9 @@ hidden_size = 256
 image_size = 784
 num_epochs = 2000
 batch_size = 100
-lr = 0.0007
+lr = 0.0005
 sample_dir = 'samples'
-train_dir = 'D:\soft\PyCharmCommunityEdition2019.2.3\pycharmprojects\mnist stuff\mnist/trainingSet/trainingSet/0/'
+train_dir = 'D:\soft\PyCharmCommunityEdition2019.2.3\pycharmprojects\mnist stuff\mnist/trainingSet/trainingSet/1/'
 '''                                                     /\
                                                        /  \
                                                         ||
@@ -165,5 +165,5 @@ for epoch in range(num_epochs):
     save_image(denorm(fake_images), os.path.join(sample_dir, 'fake_images-{}.png'.format(epoch + 1)))
 
 # Save the model checkpoints
-torch.save(G.state_dict(), 'G.ckpt')  #<------------СЮДА ПИСАТЬ ИМЯ МОДЕЛИ
-torch.save(D.state_dict(), 'D.ckpt')
+torch.save(G.state_dict(), 'G1.ckpt')  #<------------СЮДА ПИСАТЬ ИМЯ МОДЕЛИ
+torch.save(D.state_dict(), 'D1.ckpt')
